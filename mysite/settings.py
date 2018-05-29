@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'login',
-    'captcha'
+    'captcha',
 ]
 
 MIDDLEWARE = [
@@ -135,6 +135,9 @@ EMAIL_HOST = 'smtp.sina.com'
 EMAIL_POST = 25
 EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
+
+# 注册有效期天数
+CONFIRM_DAYS = 7
 
 # 好像不起作用,没有加载顺序问题?
 '''
