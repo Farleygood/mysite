@@ -1,5 +1,5 @@
 body {
-  background-color: #eee;
+  background-color: #fff;
 }
 .form-login {
   max-width: 330px;
@@ -27,4 +27,8 @@ body {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+#bg{
+  background:url(../../img/back.jpg) repeat;
 }
