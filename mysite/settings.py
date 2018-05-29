@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'login',
+    'captcha'
 ]
 
 MIDDLEWARE = [
@@ -128,3 +129,17 @@ STATIC_URL = '/static/'
 STATICFILES_DIR = [
     os.path.join(BASE_DIR, "static"),
 ]
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.sina.com'
+EMAIL_POST = 25
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+
+# 好像不起作用,没有加载顺序问题?
+'''
+STATICFILES_FINDERS = (
+    "django.contrib.staticfiles.finders.AppDirectoriesFinder",
+    "django.contrib.staticfiles.finders.FileSystemFinder",
+)
+'''
