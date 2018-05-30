@@ -46,6 +46,7 @@ def register(request):
     if request.method == 'POST':
         register_form = forms.RegisterForm(request.POST)
         message = "请检查填写的内容"
+        request.session.flush()
         if register_form.is_valid():
             username = register_form.cleaned_data['username']
             password1 = register_form.cleaned_data['password1']
