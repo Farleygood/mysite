@@ -131,10 +131,10 @@ STATICFILES_DIR = [
 ]
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.sina.com'
-EMAIL_POST = 25
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
+EMAIL_HOST = 'smtp.qq.com'
+EMAIL_POST = 465
+EMAIL_HOST_USER = '442xxxxx@qq.com'
+EMAIL_HOST_PASSWORD = 'xxxxx'
 
 # 注册有效期天数
 CONFIRM_DAYS = 7
