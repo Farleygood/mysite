@@ -139,7 +139,9 @@ EMAIL_HOST_PASSWORD = 'xxxxx'
 # 注册有效期天数
 CONFIRM_DAYS = 7
 
-# 好像不起作用,没有加载顺序问题?
+
+
+# 好像不起作用啊,没有加载顺序问题?
 '''
 STATICFILES_FINDERS = (
     "django.contrib.staticfiles.finders.AppDirectoriesFinder",
